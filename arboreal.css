@@ -1,0 +1,141 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-color:  white;
+}
+.wrap{
+  padding: 5em;
+}
+
+/*så att navbaren är högst upp på sidan var man än är, och så allt i navbaren blir centrerat*/
+.navbar{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  background-color:  #b1cb9b;
+}
+
+/*gör så nav baren blir på rad och inte i kolumn. */
+nav ul li{
+  width: 150px;
+  display: inline-block;
+}
+
+/*Ta bort alla dottar vid listor i navbar och pricing del*/
+li{
+  list-style-type: none;
+}
+
+/*tar bort linjer under texten i navbaren*/
+.navbar a{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+a:hover {
+    background-color: white;
+}
+
+/*så att hela bakgrundbilden är med i headern. column placerar loggan över slogan*/
+  header{
+  height: 700px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-image: url(sun.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+ }
+
+header h1{
+  text-shadow: 0px 0px 10px white;
+}
+
+/*alla h2 centrerat och med skugga*/
+h2{
+  font-size: 26px;
+  display: flex;
+  text-shadow: 0px 0px 10px white;
+  justify-content: center;
+}
+
+/*border style på alla avsnitt som finns med i navbaren*/
+.about{
+  display: flex;
+  height: 15em;
+  padding: 0em 5em;
+  align-items: center;
+  text-align: center;
+  border-style: inset;
+}
+
+/*stora diven i prices*/
+.newpricing{
+  display: flex;
+  border-style: inset;
+}
+/*tre små divarna i newpricing*/
+.prices{
+  width: 30%;
+  flex-wrap: wrap;
+}
+/*stora diven i themes med tre mindre divar med alla teman*/
+.themes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+  border-style: inset;
+}
+
+.divthemes{
+  padding-top: 3em;
+  width: 20em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.themes h2{
+  font-size: 24px;
+}
+
+ .themes img{
+  width:100%;
+  height: auto;
+}
+
+footer{
+  background-color:  #b1cb9b;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.wrapper{
+  display: flex;
+}
+
+.contact{
+  flex:1;
+  width: 100%;
+  height: 500px;
+  flex-flow: column;
+  padding: 2em 10em;
+}
+
+.contact p{
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.social{
+display: flex;
+justify-content: space-around;
+}
